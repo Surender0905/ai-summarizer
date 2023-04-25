@@ -1,20 +1,26 @@
-import Hero from "./components/Hero";
-import Demo from "./components/Demo";
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./App.css";
+import Home from "./pages/Home";
+import Countdown from "./pages/Countdown";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/count-down",
+    element: <Countdown />,
+  },
+]);
 
 const App = () => {
   return (
-    <main>
-      <div className="main">
-        <div className="gradient" />
-      </div>
-
-      <div className="app">
-        <Hero />
-        <Demo />
-      </div>
-    </main>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 };
 
