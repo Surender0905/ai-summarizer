@@ -41,7 +41,7 @@ const Countdown = () => {
       if (numbersToAddZeroTo.includes(hours)) {
         hours = `0${hours}`;
       } else if (numbersToAddZeroTo.includes(minutes)) {
-        minutes = `0${minutes}`;
+        minutes = `0 ${minutes}`;
       } else if (numbersToAddZeroTo.includes(seconds)) {
         seconds = `0${seconds}`;
       }
@@ -53,6 +53,9 @@ const Countdown = () => {
   return (
     <div className={styles.box}>
       <div className={styles.wrap}>
+        <div className={styles.logo}>
+          <img src="/logo.png" alt="logo" />
+        </div>
         <h1 className={styles.title}>
           Coming <strong>Soon</strong>
         </h1>

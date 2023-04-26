@@ -1,5 +1,5 @@
 .box {
-    background-color: #f2f1ed;
+    background-image: radial-gradient(circle 610px at 5.2% 51.6%, rgba(5, 8, 114, 1) 0%, rgba(7, 3, 53, 1) 97.5%);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -8,19 +8,36 @@
 }
 
 .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 
 
-    height: 310px;
+
+
 
 }
 
 
+.logo {
+    width: 300px;
+
+}
+
+.logo img {
+    width: 100%;
+    object-fit: contain;
+
+}
+
 
 .title {
-    margin-bottom: 60px;
+
     text-align: center;
     font-size: 50px;
     font-weight: 600;
+    color: #ffffff;
 
     text-transform: uppercase;
 }
@@ -52,7 +69,7 @@
     display: block;
     margin-bottom: 15px;
 
-    color: #1a1a1a;
+    color: #ffffff;
     text-transform: uppercase;
 }
 
@@ -79,9 +96,9 @@
 .countdown .figure>span {
 
     padding: 10px;
-    left: 0;
-    right: 0;
-    margin: auto;
+
+
+
     font-size: 60px;
     font-weight: 700;
     color: #de4848;
